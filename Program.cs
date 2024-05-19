@@ -82,15 +82,15 @@ while (int.TryParse(entrada, out opcion) && opcion != 0)
         {
             case 1:
                 resultado = num1 + num2;
-                Console.WriteLine("La suma entre "+ num1 + " y " + num2 + " es: " + resultado);
+                Console.WriteLine($"La suma entre  {num1} y {num2} es: {resultado}");
             break;
             case 2:
                 resultado = num1 - num2;
-                Console.WriteLine("La Resta entre "+ num1 + " y " + num2 + " es: " + resultado);
+                Console.WriteLine($"La resta entre  {num1} y {num2} es: {resultado}");
             break;
             case 3:
                 resultado = num1 * num2;
-                Console.WriteLine("El producto entre "+ num1 + " y " + num2 + " es: " + resultado);
+                Console.WriteLine($"El producto  {num1} y {num2} es: {resultado}");
             break;  
             case 4:
                 if (num2 == 0)
@@ -100,7 +100,7 @@ while (int.TryParse(entrada, out opcion) && opcion != 0)
                 else
                 {
                     resultado = num1 / num2;
-                    Console.WriteLine("La division de "+ num1 + " en " + num2 + " es: " + resultado);
+                    Console.WriteLine($"La division entre {num1} y {num2} es: {resultado}");
                 }
             break;
             default:
@@ -140,12 +140,12 @@ do
 
     if (resultadoDev)
     {
-        Console.WriteLine("El valor absoluto del numero es: " + Math.Abs(numero));
-        Console.WriteLine("El cuadrado del numero ingresado es: " + (numero*numero));
-        Console.WriteLine("La raiz cuadrada del numero ingresado es: " + Math.Sqrt(numero));
-        Console.WriteLine("El seno del numero ingresado es: " +  Math.Sin(numero));
-        Console.WriteLine("El coseno del numero ingresado es: " + Math.Cos(numero));
-        Console.WriteLine("La parte entera del numero ingresado es: " + Math.Truncate(numero));
+        Console.WriteLine($"El valor absoluto del numero es: {Math.Abs(numero)}");
+        Console.WriteLine($"El cuadrado del numero ingresado es: {(numero*numero)}");
+        Console.WriteLine($"La raiz cuadrada del numero ingresado es: {Math.Sqrt(numero)}");
+        Console.WriteLine($"El seno del numero ingresado es: {Math.Sin(numero)}");
+        Console.WriteLine($"El coseno del numero ingresado es: {Math.Cos(numero)}");
+        Console.WriteLine($"La parte entera del numero ingresado es: {Math.Truncate(numero)}");
     }
     else
     {
@@ -175,17 +175,17 @@ do
     {
         if (numero1 > numero2)
         {
-            Console.WriteLine("El maximo entre los dos numeros es el primer numero: " + numero1);
-            Console.WriteLine("El minimo entre los dos numeros es el segundo numero: " + numero2);
+            Console.WriteLine($"El maximo entre los dos numeros es el primer numero: {numero1}");
+            Console.WriteLine($"El minimo entre los dos numeros es el segundo numero: {numero2}");
         }
         else if (numero1<numero2)
         {
-            Console.WriteLine("El maximo entre los dos numeros es el segundo numero: " + numero2);
-            Console.WriteLine("El minimo entre los dos numeros es el primer numero: " + numero1);
+            Console.WriteLine($"El maximo entre los dos numeros es el segundo numero: {numero2}");
+            Console.WriteLine($"El minimo entre los dos numeros es el primer numero: {numero1}");
         }
         else
         {
-            Console.WriteLine("Ambos numeros ingresados son iguales: " + numero1 + " y " + numero2);
+            Console.WriteLine($"Ambos numeros ingresados son iguales: {numero1} y {numero2}" );
         }
         resultado1 = true;
         resultado2 = true;
