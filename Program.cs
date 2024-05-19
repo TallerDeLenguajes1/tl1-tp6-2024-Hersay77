@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-/*Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, World!");
 int a;
 int b;
 a=10;
@@ -14,7 +14,7 @@ Nota: Si observa un subrayado amarillo sugiriendo modificar las variables al tip
 "nullable", abra el archivo de configuración de proyecto de extensión .csproj y elimine
 la línea que dice <Nullable>enable</Nullable>. No olvide guardar el archivo.
 */
-/*
+
 Console.WriteLine("Ingrese un numero: ");
 string numStr = Console.ReadLine(); 
 int aux;
@@ -36,7 +36,7 @@ if (int.TryParse(numStr, out aux))
         Console.WriteLine($"El numero ingresado es: {aux}");
     }
 }
-*/
+
 /*
 Ejercicio 2. Ingrese al branch CalculadoraV1 y construya un programa que sea una
 calculadora que permita al usuario realizar las 4 operaciones básicas (Sumar, Restar,
@@ -119,20 +119,6 @@ while (int.TryParse(entrada, out opcion) && opcion != 0)
 }
 
 
-
-/*
-Ejercicio 3. Ingrese al Branch CalculadoraV2 para implementar las mejoras en la
-calculadora.. Solicite al usuario un número y muestre por pantalla:
-● El valor absoluto de un número
-● El cuadrado
-● La raíz cuadrada
-● El seno
-● El Coseno
-● La parte entera de un tipo float.
-
-*/*/
-
-
 /*
 Ejercicio 3. Ingrese al Branch CalculadoraV2 para implementar las mejoras en la
 calculadora.. Solicite al usuario un número y muestre por pantalla:
@@ -144,15 +130,15 @@ calculadora.. Solicite al usuario un número y muestre por pantalla:
 ● La parte entera de un tipo float.
 */
 
-bool resultado = false;
+bool resultadoDev = false;
 do
 {
     Console.WriteLine("Ingresar un numero");
-    string entrada = Console.ReadLine();
+    entrada = Console.ReadLine();
     float numero;
-    resultado = float.TryParse(entrada, out numero);
+    resultadoDev = float.TryParse(entrada, out numero);
 
-    if (resultado)
+    if (resultadoDev)
     {
         Console.WriteLine("El valor absoluto del numero es: " + Math.Abs(numero));
         Console.WriteLine("El cuadrado del numero ingresado es: " + (numero*numero));
@@ -165,7 +151,7 @@ do
     {
         Console.WriteLine("Ingreso incorrecto");
     }     
-} while (resultado == false);
+} while (resultadoDev == false);
 
 
 /*
@@ -174,13 +160,12 @@ do
     ● El Mínimo entre los dos números
 */
 
-
 bool resultado1;
 bool resultado2;
 do
 {
     Console.WriteLine("Ingrese un primer numero: ");
-    string entrada = Console.ReadLine();
+    entrada = Console.ReadLine();
     float numero1, numero2;
     resultado1 = float.TryParse(entrada , out numero1);
     Console.WriteLine("Ingrese el segundo numero: ");
