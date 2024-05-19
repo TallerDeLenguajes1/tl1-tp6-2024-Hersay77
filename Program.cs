@@ -43,7 +43,7 @@ Multiplicar y Dividir) a partir de un menú para seleccionar la opción a elegir
 pida dos números y que devuelva el resultado de la operación seleccionada. Además
 una vez que termine de realizar la operación le pregunte si desea realizar otro cálculo.
 */
-
+/*
 
 Console.WriteLine("Usar Cacluladora? Si-ingrese 1. No-ingrese 0");
 string entrada = Console.ReadLine();
@@ -116,5 +116,7 @@ while (int.TryParse(entrada, out opcion) && opcion != 0)
     Console.WriteLine("Continuar usando la Cacluladora? Si-ingrese 1. No-ingrese 0");
     entrada = Console.ReadLine();
 }
+
+*/
 
 
