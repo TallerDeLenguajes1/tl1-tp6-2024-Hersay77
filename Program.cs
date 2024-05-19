@@ -43,7 +43,7 @@ Multiplicar y Dividir) a partir de un menú para seleccionar la opción a elegir
 pida dos números y que devuelva el resultado de la operación seleccionada. Además
 una vez que termine de realizar la operación le pregunte si desea realizar otro cálculo.
 */
-/*
+
 
 Console.WriteLine("Usar Cacluladora? Si-ingrese 1. No-ingrese 0");
 string entrada = Console.ReadLine();
@@ -117,6 +117,16 @@ while (int.TryParse(entrada, out opcion) && opcion != 0)
     entrada = Console.ReadLine();
 }
 
+
+
+/*
+Ejercicio 3. Ingrese al Branch CalculadoraV2 para implementar las mejoras en la
+calculadora.. Solicite al usuario un número y muestre por pantalla:
+● El valor absoluto de un número
+● El cuadrado
+● La raíz cuadrada
+● El seno
+● El Coseno
+● La parte entera de un tipo float.
+
 */
-
-
